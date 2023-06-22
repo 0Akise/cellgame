@@ -56,7 +56,7 @@ impl HighLife {
 
     pub fn update(&self, live_neighbors: usize) -> Self {
         let alive = match (self.alive, live_neighbors) {
-            (true, 3) | (true, 4) => true,
+            (true, 2) | (true, 3) => true,
             (false, 3) | (false, 4) => true,
             _ => false,
         };
